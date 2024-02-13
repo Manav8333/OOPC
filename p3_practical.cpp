@@ -11,13 +11,13 @@ class cars{
         cout<<"Enter model name : ";
         cin>>mode;
 
-        cout<<"ENter the fuel type"<<"[1]petrol [2]diesel [3]EV [4]CNG : ";
+        cout<<"Enter the fuel type"<<"[1]petrol [2]diesel [3]EV [4]CNG : ";
         cin>>fuel;
 
         cout<<"Enter showroom price : ";
         cin>>show_price;
 
-        cout<<"ENter mileage of car : ";
+        cout<<"Enter mileage of car : ";
         cin>>mileage;
 
         cout<<"Enter transmission type : ";
@@ -26,7 +26,7 @@ class cars{
         cout<<"ENter tank capacity : ";
         cin>>tank_cap;
 
-        cout<<"ENter the no. of seating : ";
+        cout<<"Enter the no. of seating : ";
         cin>>seat;
 
         cout<<"Enter the airbags : ";
@@ -92,7 +92,7 @@ int main()
         cin>>p_ch;
         for(int i=0;i<car;i++)
         {
-            if(p_ch==a[i].show_price)
+            if(p_ch<=a[i].show_price)
             {
                 cout<<endl;
                 a[i].putdata();
