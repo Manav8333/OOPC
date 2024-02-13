@@ -60,14 +60,13 @@ int main()
     {
     case 1:
         cout<<endl<<"List of TATA cars"<<endl;
-        cout<<"[1] Tiago [2]Punch [3] Altroz [4]Tigor [5]Nexon [6]Harrier [7]Safari";
         for(int i=0;i<car;i++)
         {
-            cout<<"("<<i<<")"<<a[i].mode<<endl;
+            cout<<"("<<i+1<<")"<<a[i].mode<<endl;
         }
         cout<<"Choose your dream car to get details : ";
         cin>>m_ch;
-        a[m_ch].putdata();
+        a[m_ch-1].putdata();
         break;
 
     case 2:
