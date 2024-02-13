@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
 
-void cubo(int height, int width, int depth){
+void cubo(float height, float width, float depth){
     float area;
      area=height*width*depth;
      cout<<"The area of cuboid is : ";
      cout<<area<<endl;
 }
 
-void rect(int height, int width){
+void rect(float height, float width){
     float area;
      area=height*width;
      cout<<"The area of rectangle is : ";
      cout<<area<<endl;
 }
 
-void circle(int radius){
+void circle(float radius){
     float area;
     cout<<"The area of circle is : ";
     area=3.14*radius*radius;
@@ -24,9 +24,9 @@ void circle(int radius){
 
 int main()
 {
-    int radius;
-    int height,width,depth;
-    cout<<"Enter the radius of circle";
+    float radius;
+    float height,width,depth;
+    cout<<"Enter the radius of circle : ";
     cin>>radius;
     circle(radius);
 
